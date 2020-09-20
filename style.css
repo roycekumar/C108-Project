@@ -1,0 +1,53 @@
+body
+{
+  color: white;
+  background:#9b0254;
+}
+span
+{
+  font-size: 30px;
+}
+#camera , #result
+{
+  border: 2px dashed black;
+  border-radius: 12px;
+  width: 350px;
+  height: 300px; 
+}
+#result_gesture_name
+{
+  color: oldlace;
+}
+.gesture_name
+{
+  font-size: 40px;
+}
+.gesture
+{
+  font-size:48px;
+}
+.heading{
+  font-size: 24px;
+  background-color: #32c3e0;
+  letter-spacing: 10px;
+}
+.heading:hover{
+  background-color: #32c3e0;
+}
+.heading:active{
+  background-color: #32c3e0 !important;
+}
+label{
+  background-color: white;
+  color: green;
+  padding:5px;
+  border-radius: 7px;
+}
+border{
+  color: black;
+  background-color: white;
+  padding: 20px;
+  padding-bottom: 10px !important;
+  border-radius:12px ;
+  border: none;
+}

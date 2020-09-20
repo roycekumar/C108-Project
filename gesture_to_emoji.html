@@ -1,0 +1,86 @@
+ 
+<html>
+  <head>
+    <title>GESTURE WEB APP</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+    <a id="link" download="Emotion.jpeg"></a>
+    <audio src="Audio.m4a" id="audio"></audio>
+  <div class="container">
+  <center>
+    <h3 class="btn btn-primary heading" onclick="download()">GESTURE WEB APP
+    <br>
+    <span>&#128076;</span>
+    <span>&#128077;</span>
+    <span>&#9996;</span>
+    <span>&#9994;</span>
+    <span> &#128079;</span>
+    <span>&#129304;</span>
+    <span>&#128078;</span>
+    </h3>
+  </center>
+    <center>
+
+      <br><br>
+
+      <p style="font-size: 22px;">Take a selfie gesture to know about it's meaining</p>
+      <p>On the following gesture the model is trained - </p>
+
+<div class="col-md-4 col-sm-12 col-xs-12">
+  <br><br><br>
+  <label>Webcam View - </label>
+  <div id="camera"></div>
+  <br><br>
+  <button onclick="take_snapshot();" class=" btn btn-warning">Capture Image</button>
+  <br>
+  <br>
+
+</div>
+<div class="col-md-4 col-sm-12 col-xs-12">
+  <border>
+  <span>&#128076;|</span>
+  <span>&#128077;|</span>
+  <span>&#9996;</span>
+  </border>
+  <br>
+  <br>
+  <label>Prediction - </label>
+  <p class="gesture_name" id="result_gesture_name"></p>
+  <p class="gesture" id="update_gesture"></p>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  
+</div>
+      <div class="col-md-4 col-sm-12 col-xs-12">
+        <br><br><br>
+	      <label>Snapshot <br>   <span class="glyphicon glyphicon-arrow-down"></span> </label>
+<div id="result"></div>
+        <br><br>
+<button onclick="check();" class="btn btn-success">Predict Gesture</button>
+      </div>
+
+    </center>
+
+  </div>
+
+<script src="main.js"></script>
+
+  </body>
+</html>
+
+ 
